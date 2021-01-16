@@ -16,8 +16,7 @@
             "Good to see you again", 
             "What can I help with?", 
             "Hi, how can I help?"
-        ],
-        "context": [""]
+        ]
     },
     {
         "tag": "end_conversation",
@@ -34,8 +33,7 @@
             "Glad I could help", 
             "My pleasure", 
             "I'll be here if you need anymore help"
-        ],
-        "context": [""]
+        ]
     },
     {
         "tag": "hour", 
@@ -48,8 +46,7 @@
             "Are you open right now?",
             "Do you close?"
         ], 
-        "responses": ["We are open daily from 5 am to 12 am", "Our doors are open from 9 am to 5 pm daily"], 
-        "context": [""]
+        "responses": ["We are open daily from 5 am to 12 am", "Our doors are open from 9 am to 5 pm daily"]
     }, 
     {
         "tag": "option",
@@ -66,10 +63,12 @@
             "Do you do anything?",
             "What are things I can ask you?",
             "What can you do?",
-            "What do you do?"
+            "What do you do?",
+            "What are you capable of?",
+            "How can you help me?",
+            "How can you help?"
         ],
-        "responses": ["I can tell you about equipment, classes, vending, COVID policies, and membership"], 
-        "context": [""]
+        "responses": ["I can tell you about equipment, classes, vending, COVID policies, and membership"]
     },
     {
         "tag": "equipment",
@@ -82,8 +81,7 @@
             "Are there dumbbells?",
             "Do you have dumbbells?"
         ],
-        "responses": ["We have a number of squat racks, benches, dumbbells, and machines."],
-        "context": [""]
+        "responses": ["We have a number of squat racks, benches, dumbbells, and machines."]
     },
     {
         "tag": "class",
@@ -103,8 +101,7 @@
             "Can I get training?",
             "I don't know how to lift weights",
             "Can someone teach me how to lift weights?"],
-        "responses": ["We offer group classes that are included with your membership. Personal trainers are available for an additional charge."],
-        "context": [""]
+        "responses": ["We offer group classes that are included with your membership. Personal trainers are available for an additional charge."]
     },
     {
         "tag": "vending",
@@ -117,8 +114,7 @@
             "Can I buy refreshments?",
             "Can I buy beverages?",
             "Can I buy food?"],
-        "responses": ["Water is available to all members for free. We do sell other beverages for additional fees."],
-        "context": [""]
+        "responses": ["Water is available to all members for free. We do sell other beverages for additional fees."]
     }, 
     {
         "tag": "covid",
@@ -140,8 +136,7 @@
             "Will masks be required because of coronavirus?",
             "Will gym members wear masks?"
         ],
-        "responses": ["All members are required to wear masks in the gym. Additionally members must wipe down equipment after use."],
-        "context": [""]
+        "responses": ["All members are required to wear masks in the gym. Additionally members must wipe down equipment after use."]
     },
     {
         "tag": "member",
@@ -157,8 +152,7 @@
         ],
         "responses": [
             "The gym currently has around 200 members.", 
-            "The gym has approximately 200 members."],
-        "context": [""]
+            "The gym has approximately 200 members."]
     },
     {
         "tag": "membership",
@@ -168,7 +162,6 @@
             "Can I join the gym?", 
             "How do I join the gym?"
         ],
-        "responses": ["The easiest way to join the gym is by going to our website www.gym.com"],
-        "context": [""]
+        "responses": ["The easiest way to join the gym is by going to our website www.gym.com"]
     }
 ]}
