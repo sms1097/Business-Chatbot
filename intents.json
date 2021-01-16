@@ -1,0 +1,91 @@
+{"intents": [
+    {
+        "tag": "start_conversation",
+        "patterns": ["Hello", "Hi there", "Hey", "Helo", "Hi", "Greetings"],
+        "responses": ["Hello, welcome to the store", "Nice to Meet you", "Hey to you too!", "Good to see you again", "What can I help with?", "Hi, how can I help?"],
+        "context": [""]
+    },
+    {
+        "tag": "end_conversation",
+        "patterns": ["Goodbye", "Thank you for all of your help", "Thank you for helping", "Thanks for helping me", "That's helpful"],
+        "responses": ["Glad I could help", "My pleasure", "I'll be here if you need anymore help"],
+        "context": [""]
+    },
+    {
+        "tag": "no_answer",
+        "patterns": [], 
+        "responses": ["Sorry, I'm not sure what you're asking", "Could you elaborate", "I don't quite have enough information"], 
+        "context": [""]
+    },
+    {
+        "tag": "hours", 
+        "patterns": ["What hours are you open?", "What are your hours of operation?", "What time do you open?", "What time do you close?", "How much longer are you open for?"], 
+        "responses": ["We are open daily from 9 am to 5 pm", "Our doors are open from 9 am to 5 pm daily"], 
+        "context": [""]
+    }, 
+    {
+        "tag": "options",
+        "patterns": ["What do you do?", "What can you do?", "Who are you?", "What can I ask you"],
+        "responses": ["I can tell you about equipment, classes, vending, COVID policies, and membership"], 
+        "context": [""]
+    },
+    {
+        "tag": "equipment",
+        "patterns": [
+            "What equipment do you have?", 
+            "Do you have benches?", 
+            "Are there benches?", 
+            "Do you have squat racks?",
+            "Are there squat racks?", 
+            "Are there dumbbells?",
+            "Do you have dumbbells?"
+        ],
+        "responses": ["We have a number of squat racks, benches, dumbbells, and machines."],
+        "context": [""]
+    },
+    {
+        "tag": "classes",
+        "patterns": ["Do you offer any instruction?", "Are there any personal trainers?", "Can someone teach me?"],
+        "responses": ["We offer group classes that are included with your membership. Personal trainers are available for an additional charge."],
+        "context": [""]
+    },
+    {
+        "tag": "vending",
+        "patterns": ["Is there water in the gym?", "Can I buy a water?", "Do you sell refreshments?"],
+        "responses": ["Water is available to all members for free. We do sell other beverages for additional fees."],
+        "context": [""]
+    }, 
+    {
+        "tag": "covid",
+        "patterns": [
+            "How are members kept safe during covid?", 
+            "How are members kept safe during coronavirus?",
+            "Do I need to wear a mask?", 
+            "Will gym members wear masks?", 
+            "What is your response to coronavirus?"
+        ],
+        "responses": ["All members are required to wear masks in the gym. Additionally members must wipe down equipment after use."],
+        "context": [""]
+    },
+    {
+        "tag": "members",
+        "patterns": [
+            "How many members belong to the gym?",
+            "Are there many members in the gym?", 
+            "How many members do you have?"
+        ],
+        "responses": ["The gym currently has around 200 members."],
+        "context": [""]
+    },
+    {
+        "tag": "membership",
+        "patterns": [
+            "How can I become a member?",
+            "How much does membership cost?",
+            "Can I join the gym?", 
+            "How do I join the gym?"
+        ],
+        "responses": ["The easiest way to join the gym is by going to our website www.gym.com"],
+        "context": [""]
+    }
+]}
