@@ -12,11 +12,10 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 from sklearn.preprocessing import LabelEncoder
 
-
 ## Constants
 EMBEDDING_DIM = 50 
-EMBEDDINGS_PATH = '/home/sean/Documents/Business-Chatbot/data/glove.6B.50d.txt'
-DATA_PATH = '/home/sean/Documents/Business-Chatbot/data/intents.json'
+EMBEDDINGS_PATH = '../data/glove.6B.50d.txt'
+DATA_PATH = '../data/intents.json'
 
 
 ## Setup
@@ -97,10 +96,10 @@ model.compile(loss="sparse_categorical_crossentropy", optimizer="adam", metrics=
 history = model.fit(data, epochs=50)
 
 ## Save model
-model.save_weights('/home/sean/Documents/Business-Chatbot/model/chatbot')
+model.save_weights('../model/chatbot')
 
-with open('/home/sean/Documents/Business-Chatbot/model/tokenizer.pickle', 'wb') as handle:
+with open('../model/tokenizer.pickle', 'wb') as handle:
     pickle.dump(X_tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-with open('/home/sean/Documents/Business-Chatbot/model/label_encoder', 'wb') as handle:
+with open('../model/label_encoder', 'wb') as handle:
     pickle.dump(y_enc, handle, protocol=pickle.HIGHEST_PROTOCOL)

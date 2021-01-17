@@ -10,13 +10,12 @@ from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-
 class ChatBot:
     def __init__(self):
-        with open('/home/sean/Documents/Business-Chatbot/model/tokenizer.pickle', 'rb') as handle:
+        with open('model/tokenizer.pickle', 'rb') as handle:
             self.tokenizer = pickle.load(handle)
 
-        with open('/home/sean/Documents/Business-Chatbot/model/label_encoder', 'rb') as handle:
+        with open('model/label_encoder', 'rb') as handle:
             self.y_enc = pickle.load(handle)
 
         self.tweeter = TweetTokenizer()
@@ -36,14 +35,13 @@ class ChatBot:
                 len(self.y_enc.classes_), activation='softmax')
         ])
 
-        self.model.load_weights(
-            '/home/sean/Documents/Business-Chatbot/model/chatbot')
+        self.model.load_weights('model/chatbot')
 
         self.responses = self._load_responses()
 
     def _load_responses(self):
         flatten = lambda l: np.array([x for sub in l for x in sub])
-        data = open('/home/sean/Documents/Business-Chatbot/data/intents.json').read()
+        data = open('data/intents.json').read()
         data = json.loads(data)
         responses = []
         
