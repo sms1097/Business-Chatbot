@@ -1,6 +1,6 @@
 # Business-Chatbot
 This is a basic example for a chat bot that could serve as an interface between customers and a store. The specific 
-example uses the conext of a gym, but this could easily be extended for other businesses. The data was limited, it's all data I wrote myself based upon gym FAQs in my area. Other than getting more data there are a few areas of improvement I've been thinking about with chatbots. 
+example uses the conext of a gym, but this could easily be extended for other businesses. The data was limited, it's all data I wrote myself based upon gym FAQs in my area.
 
 ### Brief Overview of Model Approach
 This model learns to identify topics and randomly returns a response that is appropriate for the topic identified. The topics can be view in the `intents.json` file in the data folder. The data was pre-processed by tokenizing and lemmatizing the data, then feeding through an RNN. The model trained then predicts the topic and returns a resonse. 
@@ -14,6 +14,7 @@ docker run -p 8888:8888 gymbot
 This will launch a jupyter notebook where the demo can be replicated. The model could also be retrained from this container. 
 
 ### Future Ideas for Chat Bots
+Other then getting more data there are further ideas I've been thinking about for writing successful chatbots. 
 #### Plugin Models on Base Model
 One approach that would work well for training bots for multiple stores would be training a base model that has seen many examples and training a smaller plugin model for each individual store. This approach would help deal with problems in lacking case specific data. 
 
